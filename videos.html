@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  *{
+      margin: 0%;
+      padding: 0%;
+  }
+#nav-bar{
+           margin: 0%;
+           padding: 0%;
+           background-color: rgb(4, 129, 202);
+           display: flex;
+           justify-content: space-between;
+           box-sizing: border-box;
+           padding: 15px;
+           /* border: 1px solid red */
+           margin-bottom: 30px;
+       }
+
+       #nav-bar-first-part{
+           width: 50%;
+        
+           display: flex;
+           justify-content: space-between;
+           align-items: center ;
+           /* border: 1px solid red; */
+         
+       }
+       #nav-bar-first-part > div{
+           font-size: 20px;
+           color: white;
+       }
+       #logo{
+           height: 25px;
+           width: 150px;
+       }
+
+       #nav-bar-second-part{
+           
+           width: 35%;
+           display: flex;
+           justify-content: space-between;
+           align-items: center ;
+           /* border: 1px solid red; */
+       }
+       #nav-bar-second-part > div{
+          
+           color: white;
+           font-size: 20px;
+       }
+     
+       #fantasy-home{
+           height: 20px;
+           width: 20px;
+       }
+      #fantasy-img-and-text{
+          display: flex;
+      }
+      .anker-in-navbar{
+          text-decoration: none;
+          color: white;
+      }
+     
+  /* ------------------------------ nav bar ------------------------- */
+        .container{
+            width: 100%;
+            height: auto;
+          border-radius: 20px;
+         margin-top: 50px;
+          box-sizing: border-box;
+          padding: 15px;
+            
+        }
+        .container > div > div > h1{
+            letter-spacing: 2px;
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+        .video-box{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            justify-content: space-between;
+        }
+       
+   .video-box > div {
+     position: relative;
+      width: 100%;
+     
+    }
+    .video-box > div > div{
+        width: 100%;
+       
+        overflow: hidden;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+
+     .video-box > div > div  img {
+       width: 100%;
+       height: 100%;
+       transition: 0.5s all ease-in-out;
+       border-radius: 10px;
+      
+   }
+   .video-box > div > div  img:hover {
+       width: 100%;
+       height: 100%;
+     transform: scale(1.5);
+   
+      
+   }
+      
+   
+
+
+      .video-box > div > div > button {
+       height: 35px;
+      position: absolute;
+      top: 45%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       background-color: white;
+       color: rgb(243, 12, 12);
+      font-size: 16px;
+      font-weight: bold;
+      padding: 7px 12px;
+       border: none;
+      cursor: pointer;
+       border-radius: 20px;
+    }
+
+    .video-box > div > div > button:hover{
+           color: blue;
+    }
+    .video-box > div > div > p{
+        color: gray;
+    }
+
+    /* --------------------------- middle part-------------------------- */
+    #conatiner-2{
+        width: 100%;
+            height: 240px;
+          border-radius: 20px;
+        
+          box-sizing: border-box;
+          padding: 15px;
+          margin-top: 40px;
+        
+          display: flex;
+          justify-content: space-around;
+    }
+   
+    #conatiner-2 > div {
+         height: 100%;
+         width: 15%;
+         background-color: rgb(7, 7, 7);
+         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+         box-sizing: border-box;
+         padding: 10px;
+         border-radius: 10px;
+    }
+    #conatiner-2 > div > a > img{
+        width: 100%;
+        height: 100%;
+    }
+/* ------------------------------------------------ last part ------------------------------ */
+      
+#container-3{
+            width: 100%;
+            height: auto;
+          border-radius: 20px;
+         
+          box-sizing: border-box;
+          padding: 15px;
+          margin-top: 70px;
+            
+        }
+        #container-3 > div > div > h1{
+            letter-spacing: 2px;
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+        #videobox2{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            justify-content: space-between;
+        }
+       
+   #videobox2 > div {
+     position: relative;
+      width: 100%;
+     
+    }
+    #videobox2 > div > div{
+        width: 100%;
+       
+        overflow: hidden;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+
+     #videobox2 > div > div  img {
+       width: 100%;
+       height: 100%;
+       transition: 0.5s all ease-in-out;
+       border-radius: 10px;
+      
+   }
+   #videobox2 > div > div  img:hover {
+       width: 100%;
+       height: 100%;
+     transform: scale(1.5);
+   
+      
+   }
+      
+   
+
+
+      #videobox2 > div > div > button {
+       height: 35px;
+      position: absolute;
+      top: 45%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       background-color: white;
+       color: rgb(243, 12, 12);
+      font-size: 16px;
+      font-weight: bold;
+      padding: 7px 12px;
+       border: none;
+      cursor: pointer;
+       border-radius: 20px;
+    }
+
+    #videobox2 > div > div > button:hover{
+           color: blue;
+    }
+    #videobox2 > div > div > p{
+        color: gray;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="nav-bar" class="sticky">
+        <div id="nav-bar-first-part">
+            <div>
+                <a href="index.html"><img id="logo" src="https://wassets.hscicdn.com/static/images/logo.png" alt=""></a>
+                
+            </div>
+            <div>
+                <a href="livescore.html" class="anker-in-navbar">Live Scores</a>
+            </div>
+            <div><a href="" class="anker-in-navbar">Series</a> </div>
+            <div><a href="teams.html" class="anker-in-navbar">Teams</a></div>
+            <div><a href="" class="anker-in-navbar">News</a></div>
+            <div><a href="" class="anker-in-navbar">Features</a></div>
+            <div><a href="videos.html" class="anker-in-navbar">Videos</a></div>
+        </div>
+        <div id="nav-bar-second-part">
+            <div id="fantasy-img-and-text">
+                <div> 
+                    <img id="fantasy-home" src="https://wassets.hscicdn.com/static/images/fantasy-home.png" alt="">
+                </div>
+               <div>
+                <a href="" class="anker-in-navbar">. Fantasy</a>
+               </div>
+               
+            </div>
+            <div><a href="login.html" class="anker-in-navbar">Log In</a></div>
+            <div><a href="signup.html" class="anker-in-navbar">Sign Up</a></div>
+            <div> <a href="" class="anker-in-navbar"><i class="fa-solid fa-bell"></i></a> </div>
+            <div> <a href="" class="anker-in-navbar"><i class="fa-solid fa-boxes-stacked"></i></a> </div>
+            <div> <a href="" class="anker-in-navbar"> <i class="fa-solid fa-magnifying-glass"></i></a> </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div>
+            <div>
+            <h1>Featured Videos</h1>
+            
+            </div>
+
+            <div class="video-box"></div>
+        </div>
+    </div>
+    <div id="conatiner-2">
+        <div>
+           <a href=""> <img src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/336600/336683.png" alt=""></a>
+        </div>
+        <div> <a href=""> <img src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/336600/336675.png" alt=""></a></div>
+        <div> <a href=""> <img src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/336700/336704.png" alt=""></a></div>
+        <div> <a href=""> <img src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/336600/336682.png" alt=""></a></div>
+        <div> <a href=""> <img src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/317700/317757.png" alt=""></a></div>
+        <div> <a href=""> <img src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/317600/317635.png" alt=""></a></div>
+        </div>
+        <div id="container-3">
+            <div>
+                <div>
+                <h1>  Videos</h1>
+                
+                </div>
+            <div id="videobox2"></div>
+            </div>
+        </div>
+      
+</body>
+</html>
+<script>
+
+ var featured = [
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0328/dm_220328_ipl2022_interview_nonbranded_samsonpc/dm_220328_ipl2022_interview_nonbranded_samsonpc.jpg",
+        content:"Samson: Malinga is making a lot of things easier",
+        dateofrelease:"Mar 27, 2022",
+        videoduration:"Play"
+    },
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0329/dm_220329_generic_interview_nonbranded_dravidwarnev2/dm_220329_generic_interview_nonbranded_dravidwarnev2.jpg",
+        content:"Dravid on Warne: 'What amazed me was the amount of time he spent discussing cricket'",
+        dateofrelease:"Mar 29, 2022",
+        videoduration:"Play"
+    },
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0328/dm_220328_INET_CRIC_wwc_pe_nonbranded_global/dm_220328_INET_CRIC_wwc_pe_nonbranded_global.jpg",
+        content:"Was the hype around India justified?'",
+        dateofrelease:"Mar 22, 2022",
+        videoduration:"Play"
+    },
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0328/dm_220328_wcc_interview_nonbranded_ellysepc/dm_220328_wcc_interview_nonbranded_ellysepc.jpg",
+        content:"Perry: Chance to include more teams in ODI World Cup in coming years'",
+        dateofrelease:"Mar 28, 2022",
+        videoduration:"Play"
+    }
+   
+ ];
+
+  var videosarr = [
+  {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0328/dm_220328_wcc_interview_nonbranded_ellysepc/dm_220328_wcc_interview_nonbranded_ellysepc.jpg",
+        content:"Perry: Chance to include more teams in ODI World Cup in coming years'",
+        dateofrelease:"Mar 28, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global.jpg",
+        content:"Has Rahane found the right franchise? How should RCB utilise Siraj?",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india.jpg",
+        content:"Shastri: Hooda and Badoni targeting Rashid was game-changing",
+        dateofrelease:"Mar 01, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0330/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 02, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0321/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials.jpg",
+        content:"is this th best batsmen in the world or what right isent that great",
+        dateofrelease:"Mar 03, 2022",
+        videoduration:"Play"
+    },
+   
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0328/dm_220328_wcc_interview_nonbranded_ellysepc/dm_220328_wcc_interview_nonbranded_ellysepc.jpg",
+        content:"Perry: Chance to include more teams in ODI World Cup in coming years'",
+        dateofrelease:"Mar 28, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global.jpg",
+        content:"Has Rahane found the right franchise? How should RCB utilise Siraj?",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india.jpg",
+        content:"Shastri: Hooda and Badoni targeting Rashid was game-changing",
+        dateofrelease:"Mar 01, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0330/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 02, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0321/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials.jpg",
+        content:"is this th best batsmen in the world or what right isent that great",
+        dateofrelease:"Mar 03, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0328/dm_220328_wcc_interview_nonbranded_ellysepc/dm_220328_wcc_interview_nonbranded_ellysepc.jpg",
+        content:"Perry: Chance to include more teams in ODI World Cup in coming years'",
+        dateofrelease:"Mar 28, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global.jpg",
+        content:"Has Rahane found the right franchise? How should RCB utilise Siraj?",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india.jpg",
+        content:"Shastri: Hooda and Badoni targeting Rashid was game-changing",
+        dateofrelease:"Mar 01, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0330/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 02, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0321/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials.jpg",
+        content:"is this th best batsmen in the world or what right isent that great",
+        dateofrelease:"Mar 03, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0328/dm_220328_wcc_interview_nonbranded_ellysepc/dm_220328_wcc_interview_nonbranded_ellysepc.jpg",
+        content:"Perry: Chance to include more teams in ODI World Cup in coming years'",
+        dateofrelease:"Mar 28, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global.jpg",
+        content:"Has Rahane found the right franchise? How should RCB utilise Siraj?",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india.jpg",
+        content:"Shastri: Hooda and Badoni targeting Rashid was game-changing",
+        dateofrelease:"Mar 01, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0330/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 02, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0321/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials.jpg",
+        content:"is this th best batsmen in the world or what right isent that great",
+        dateofrelease:"Mar 03, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0328/dm_220328_wcc_interview_nonbranded_ellysepc/dm_220328_wcc_interview_nonbranded_ellysepc.jpg",
+        content:"Perry: Chance to include more teams in ODI World Cup in coming years'",
+        dateofrelease:"Mar 28, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global.jpg",
+        content:"Has Rahane found the right franchise? How should RCB utilise Siraj?",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india.jpg",
+        content:"Shastri: Hooda and Badoni targeting Rashid was game-changing",
+        dateofrelease:"Mar 01, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0330/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 02, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0321/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials.jpg",
+        content:"is this th best batsmen in the world or what right isent that great",
+        dateofrelease:"Mar 03, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0321/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials.jpg",
+        content:"is this th best batsmen in the world or what right isent that great",
+        dateofrelease:"Mar 03, 2022",
+        videoduration:"Play"
+    },
+   
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0328/dm_220328_wcc_interview_nonbranded_ellysepc/dm_220328_wcc_interview_nonbranded_ellysepc.jpg",
+        content:"Perry: Chance to include more teams in ODI World Cup in coming years'",
+        dateofrelease:"Mar 28, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global.jpg",
+        content:"Has Rahane found the right franchise? How should RCB utilise Siraj?",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india.jpg",
+        content:"Shastri: Hooda and Badoni targeting Rashid was game-changing",
+        dateofrelease:"Mar 01, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0330/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 02, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0321/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials.jpg",
+        content:"is this th best batsmen in the world or what right isent that great",
+        dateofrelease:"Mar 03, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0328/dm_220328_wcc_interview_nonbranded_ellysepc/dm_220328_wcc_interview_nonbranded_ellysepc.jpg",
+        content:"Perry: Chance to include more teams in ODI World Cup in coming years'",
+        dateofrelease:"Mar 28, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global.jpg",
+        content:"Has Rahane found the right franchise? How should RCB utilise Siraj?",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india.jpg",
+        content:"Shastri: Hooda and Badoni targeting Rashid was game-changing",
+        dateofrelease:"Mar 01, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0330/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 02, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0321/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials.jpg",
+        content:"is this th best batsmen in the world or what right isent that great",
+        dateofrelease:"Mar 03, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0328/dm_220328_wcc_interview_nonbranded_ellysepc/dm_220328_wcc_interview_nonbranded_ellysepc.jpg",
+        content:"Perry: Chance to include more teams in ODI World Cup in coming years'",
+        dateofrelease:"Mar 28, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global.jpg",
+        content:"Has Rahane found the right franchise? How should RCB utilise Siraj?",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india.jpg",
+        content:"Shastri: Hooda and Badoni targeting Rashid was game-changing",
+        dateofrelease:"Mar 01, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0330/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 02, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0321/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials.jpg",
+        content:"is this th best batsmen in the world or what right isent that great",
+        dateofrelease:"Mar 03, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0328/dm_220328_wcc_interview_nonbranded_ellysepc/dm_220328_wcc_interview_nonbranded_ellysepc.jpg",
+        content:"Perry: Chance to include more teams in ODI World Cup in coming years'",
+        dateofrelease:"Mar 28, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_badoni_maruti_iqoo_global.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global/dm_220331_INET_CRIC_timeout_m6_lewis_maruti_iqoo_global.jpg",
+        content:"Has Rahane found the right franchise? How should RCB utilise Siraj?",
+        dateofrelease:"Mar 31, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0331/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india/dm_220331_INET_CRIC_ipl2022_fantasy-m8V2_wonderwins_india.jpg",
+        content:"Shastri: Hooda and Badoni targeting Rashid was game-changing",
+        dateofrelease:"Mar 01, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0330/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india/dm_220330_INET_CRIC_ipl2022_fantasy-m7_wonderwins_india.jpg",
+        content:"Shastri: A fully-fit Hardik Pandya walks into India's side",
+        dateofrelease:"Mar 02, 2022",
+        videoduration:"Play"
+    },
+
+    {
+        img_url :"https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_352/esci/media/motion/2022/0321/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials/dm_220321_210322_Runorder_Nonbranded_DelhiCaptials.jpg",
+        content:"is this th best batsmen in the world or what right isent that great",
+        dateofrelease:"Mar 03, 2022",
+        videoduration:"Play"
+    }
+    
+  ];
+
+    window.addEventListener("load",function(){
+        displayfeatured(featured);
+        display(videosarr)
+       
+    })
+    
+    function display(arr){
+        var featured = document.querySelector("#videobox2");
+
+arr.map(function(elem){
+
+    var div = document.createElement("div");
+
+    var div1 = document.createElement("div");
+     
+    var img = document.createElement("img");
+    img.src = elem.img_url;
+
+    var button = document.createElement("button");
+    button.innerText = elem.videoduration;
+
+    div1.append(img,button);
+
+    var div2 = document.createElement("div");
+    
+     var h3 =document.createElement("h3");
+     h3.innerText = elem.content;
+
+     var p = document.createElement("p");
+     p.innerText = elem.dateofrelease;
+
+     div2.append(h3,p)
+
+    
+
+
+
+    div.append(div1,div2);
+    featured.append(div);
+
+})
+    }
+
+
+    function displayfeatured(arr){
+        var featured = document.querySelector(".video-box");
+
+        arr.map(function(elem){
+
+            var div = document.createElement("div");
+
+            var div1 = document.createElement("div");
+             
+            var img = document.createElement("img");
+            img.src = elem.img_url;
+
+            var button = document.createElement("button");
+            button.innerText = elem.videoduration;
+
+            div1.append(img,button);
+
+            var div2 = document.createElement("div");
+            
+             var h3 =document.createElement("h3");
+             h3.innerText = elem.content;
+
+             var p = document.createElement("p");
+             p.innerText = elem.dateofrelease;
+
+             div2.append(h3,p)
+
+            
+
+
+
+            div.append(div1,div2);
+            featured.append(div);
+
+        })
+    }
+</script>

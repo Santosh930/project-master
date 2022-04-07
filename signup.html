@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+body{
+            padding: 0%;
+            margin: 0%;
+        }
+       #nav-bar{
+           margin: 0%;
+           padding: 0%;
+           background-color: rgb(4, 129, 202);
+           display: flex;
+           justify-content: space-between;
+           box-sizing: border-box;
+           padding: 15px;
+           /* border: 1px solid red */
+           margin-bottom: 30px;
+       }
+
+       #nav-bar-first-part{
+           width: 50%;
+        
+           display: flex;
+           justify-content: space-between;
+           align-items: center ;
+           /* border: 1px solid red; */
+         
+       }
+       #nav-bar-first-part > div{
+           font-size: 20px;
+           color: white;
+       }
+       #logo{
+           height: 25px;
+           width: 150px;
+       }
+
+       #nav-bar-second-part{
+           
+           width: 30%;
+           display: flex;
+           justify-content: space-between;
+           align-items: center ;
+           /* border: 1px solid red; */
+       }
+       #nav-bar-second-part > div{
+          
+           color: white;
+           font-size: 20px;
+       }
+     
+       #fantasy-home{
+           height: 20px;
+           width: 20px;
+       }
+      #fantasy-img-and-text{
+          display: flex;
+      }
+      .anker-in-navbar{
+          text-decoration: none;
+          color: white;
+      }
+      .sticky{
+          position: fixed;
+          top: 0%; 
+          width: 100%;
+      }
+      #container{
+          width: 50%;
+          height: 550px;
+          margin: auto;
+         
+          background-color:  rgb(4, 129, 202);;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      #container > div >a >img{
+           height: 60px;
+          margin-bottom: 20px;
+       }
+       input{
+           height: 40px;
+           width: 320px;
+           margin-bottom: 20px;
+           border: none;
+           border-radius: 10px;
+       }
+      
+       #submit{
+           font-size: 15px;
+       }
+       #submit:hover{
+           color: whitesmoke;
+           background-color: rgb(4, 129, 202);;
+       }
+     #form1{
+         padding-left: 150px;
+     }
+
+</style>
+<body>
+    <div class="sticky">
+        <div id="nav-bar">
+            <div id="nav-bar-first-part">
+                <div>
+                    <a href="index.html"><img id="logo" src="https://wassets.hscicdn.com/static/images/logo.png" alt=""></a>
+                    
+                </div>
+                <div>
+                    <a href="livescore.html" class="anker-in-navbar">Live Scores</a>
+                </div>
+                <div><a href="" class="anker-in-navbar">Series</a> </div>
+                <div><a href="teams.html" class="anker-in-navbar">Teams</a></div>
+                <div><a href="" class="anker-in-navbar">News</a></div>
+                <div><a href="" class="anker-in-navbar">Features</a></div>
+                <div><a href="videos.html" class="anker-in-navbar">Videos</a></div>
+            </div>
+            <div id="nav-bar-second-part">
+                <div id="fantasy-img-and-text">
+                    <div> 
+                        <img id="fantasy-home" src="https://wassets.hscicdn.com/static/images/fantasy-home.png" alt="">
+                    </div>
+                   <div>
+                    <a href="" class="anker-in-navbar">. Fantasy</a>
+                   </div>
+                   
+                </div>
+                <div><a href="login.html" class="anker-in-navbar">Log In</a></div>
+                <div><a href="signup.html" class="anker-in-navbar">Sign Up</a></div>
+                <div> <a href="" class="anker-in-navbar"><i class="fa-solid fa-bell"></i></a> </div>
+                <div> <a href="" class="anker-in-navbar"><i class="fa-solid fa-boxes-stacked"></i></a> </div>
+                <div> <a href="" class="anker-in-navbar"> <i class="fa-solid fa-magnifying-glass"></i></a> </div>
+               
+            </div>
+        </div>
+
+
+        <div id="container">
+             <div> <a href=""> <img src="https://wassets.hscicdn.com/static/images/logo.png" alt=""></a></div>
+                <div id="form1">
+                    <form action="" id="Form">
+                        <input type="text" id="name" placeholder="Enter your name">
+                        <input type="email" value="" id="email" placeholder="Enter your email"> <br>
+                        <input type="password" value="" id="password" placeholder="Enter your Password"> <br>
+                        <input type="submit" id="submit">
+                    </form>
+                </div>
+                <div >
+                    <div><a href=""><img src="https://espn.wonderwins.com/assets/images/android_icon.png" alt=""></a></div>
+                    <div><a href=""><img src="https://espn.wonderwins.com/assets/images/ios_icon.png" alt=""></a></div>
+                </div>
+        </div>
+    
+</body>
+</html>
+<script>
+
+    var clientData = JSON.parse(localStorage.getItem("clientData")) || [];
+document.querySelector("#Form").addEventListener("submit", myfunction);
+
+function myfunction(){
+    event.preventDefault();
+    console.log("jatin")
+
+    var name1 = document.querySelector("#name").value;
+    var email = document.querySelector("#email").value;
+    var pass = document.querySelector("#password").value;
+
+    var obj = {
+        name: name1,
+        email: email,
+        pass: pass
+    };
+
+    clientData.push(obj);
+    
+    localStorage.setItem("clientData", JSON.stringify(clientData))
+    
+    window.location.href = "index.html"
+
+} 
+</script>
